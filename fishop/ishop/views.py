@@ -1,6 +1,5 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
-# Create your views here.
+
 def home(request):
-    return HttpResponse('Прив, это попытка сделать интернет сайт')
+    return render(request, 'index.html')
