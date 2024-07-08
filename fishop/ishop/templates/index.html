@@ -1,34 +1,15 @@
-<style>
-    * {
-        font-family: Arial;
-    }
+{% load static%}
+<link rel="stylesheet" href="{% static 'style.css'%}">
 
-    h1 {
-    color: #1E90FF
-    }
-
-    img {
-        width: 250px;
-    }
-
-    .product {
-        border: 1px black solid;
-        display: flex;
-        margin-top: 20px;
-    }
-
-    button {
-    margin-left: auto;
-    }
-
-</style>
-
+<div class = 'navigation'>
 <h1>FISHOP</h1>
 
     <a href='/'>Главная</a>
     <a href='/products'>Товары</a>
     <a href='/aboutas'>О нас</a>
+</div>
 
+    <div class = 'ProductList'>
     <div class = 'product'>
         <img src='https://i.pinimg.com/736x/29/b9/d8/29b9d8e227dba493753ae06374ad6493.jpg'>
         <div>
@@ -45,4 +26,4 @@
          </div>
          <button>Добавить в корзину</button>
     </div>
-
+    </div>
