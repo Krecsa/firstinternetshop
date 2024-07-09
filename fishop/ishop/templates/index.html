@@ -10,26 +10,17 @@
 </div>
 
     <div class = 'ProductList'>
+    {% for product in products %}
     <div class = 'product'>
-        <img src='https://i.pinimg.com/736x/29/b9/d8/29b9d8e227dba493753ae06374ad6493.jpg'>
+        <img src='{{ product.image_url }}'>
         <div>
-            <h2> Мышка </h2>
-            <p>Замечательная мышь для киберспортиков с которой вы 100% будете делать эйсы в каждом раунде</p>
+            <h2> {{ product.name }} </h2>
+            <p> {{ product.description }} </p>
         </div>
          <div class="price">
-            <h3>99$</h3>
+            <h3>{{product.price}}$</h3>
             <button>Добавить в корзину</button>
          </div>
     </div>
-     <div class = 'product'>
-        <img src='https://www.keyboardco.com/product-images/kb_paradise_v80_dasher_keyboard_large.jpg'>
-         <div>
-            <h2> Клавиатура </h2>
-            <p>С этой клавиатурой вы будете лучшим игроком на инвокере</p>
-         </div>
-            <div class="price">
-                <h3>39$</h3>
-                <button>Добавить в корзину</button>
-            </div>
-    </div>
+    {% endfor %}
     </div>
