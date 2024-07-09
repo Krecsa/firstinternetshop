@@ -5,7 +5,9 @@
     }
 
     * {
-        font-family: Arial;
+        font-family: OCR A Std;
+        font-weight: 600
+        font-variant: small-caps
     }
 
     h1 {
@@ -15,14 +17,21 @@
 
     img {
         width: 200px;
+        height: 200px;
     }
 
     button {
         margin-left: auto;
-        background-color: #1E90FF;
-
+        height: 50px;
+        width: 100px;
+        border: 1px #D9E9FF solid;
+        border-radius: 30px;
+        cursor: pointer;
     }
 
+    button:hover {
+        background-color: #D9E9FF;
+    }
 
     .product {
         border: 1px white solid;
@@ -49,9 +58,18 @@
         flex-direction: row;
         align-items: center;
     }
+
     a {
         margin-left: 20px;
         text-decoration: none;
         color: #1E90FF;
+        border: 1px white solid;
+        background-color: white;
+        border-radius: 30px;
+        padding: 10px;
     }
 
+    .price {
+        margin-left: auto;
+        text-align: center;
+    }
