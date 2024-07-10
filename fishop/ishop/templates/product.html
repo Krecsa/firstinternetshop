@@ -1,1 +1,26 @@
-Product
+{% load static%}
+<link rel="stylesheet" href="{% static 'style.css'%}">
+
+<div class = 'navigation'>
+<h1>FISHOP</h1>
+
+    <a href='/'>Главная</a>
+    <a href='/products'>Товары</a>
+    <a href='/aboutas'>О нас</a>
+</div>
+
+<div class = "productDetails">
+    <img class = "productImage" src {{ product.image_url }}>
+    <div class = "productTitle">
+        <h1>{{ product.name }}</h1>
+        <div class = "productPrice">
+            <h3>{{ product.price }}$</h3>
+                <button>Купить</button>
+        </div>
+    </div>
+</div>
+
+<div class="productDescription">
+    <h2>Характеристики:</h2>
+    <p>{{ product.description }}</p>
+</div>

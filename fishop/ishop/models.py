@@ -6,5 +6,9 @@ class Product(models.Model):
     price = models.IntegerField()
     image_url = models.CharField(max_length=1024)
 
+
+    dpi = models.IntegerField(null=True, blank=True)
+    type_k = models.IntegerField(null=True, blank=True)
+
     def __str__(self):
         return self.name
