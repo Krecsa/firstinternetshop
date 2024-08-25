@@ -115,7 +115,6 @@
         padding-bottom: 5px;
         border-radius: 30px;
         background: white;
-
         width: 70%;
         margin-left: auto;
         margin-right: auto;
@@ -124,3 +123,12 @@
     .productDescription * {
         margin: 30px;
     }
+    .filter {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        background: white;
+        border-radius: 30px;
+        padding: 10px;
+}
