@@ -23,10 +23,11 @@
     }
 
     button {
+        background-color: #F8F8F8;
         margin-left: auto;
-        height: 50px;
+        height: 60px;
         width: 100px;
-        border: 1px #D9E9FF solid;
+        border: none;
         border-radius: 30px;
         cursor: pointer;
     }
@@ -123,12 +124,25 @@
     .productDescription * {
         margin: 30px;
     }
-    .filter {
-        width: 60%;
+      .filter {
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10px;
-        background: white;
+        background: #F8F8F8;
         border-radius: 30px;
         padding: 10px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .searchInput {
+        font-size: 30px;
+        border: none;
+        background-color: #F8F8F8;
+        padding: 11px;
+        border-radius: 30px;
+        width: 100%;
+        margin-right: 10px;
 }
