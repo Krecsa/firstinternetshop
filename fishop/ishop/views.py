@@ -1,6 +1,7 @@
 from django.shortcuts import HttpResponse
 from django.shortcuts import render
-from .models import Product
+from .models import Product, Review
+
 
 def home(request):
     search = request.GET.get('search')
@@ -41,3 +42,11 @@ def view_product(request, id):
         'product': product,
         'reviews': reviews,
     })
+
+    def payment(request, id):
+        return render(request, "payment.html", {
+            'product': product
+        })
+
+    def success(request):
+        return render(request, 'success.html')
