@@ -17,7 +17,6 @@ def home(request):
         'search': search if search else '',
     })
 
-
 def view_product(request, id):
     product = Product.objects.filter(id=id).first()
 
@@ -43,10 +42,24 @@ def view_product(request, id):
         'reviews': reviews,
     })
 
-    def payment(request, id):
-        return render(request, "payment.html", {
-            'product': product
-        })
+def payment(request, id):
+    product = Product.objects.filter(id=id).first()
 
-    def success(request):
-        return render(request, 'success.html')
+    if request.method == "POST":
+        name = request.POST.get('name')
+        address = request.POST.get('address')
+        # Send message to Telegram
+        bot.send_message(CHAT_ID, f'''Новый заказ: {product.name}
+    Цена: {product.price} рублей
+
+ФИО покупателя: {name}
+Адрес доставки: {address}
+''')
+        return redirect('/success')
+
+    return render(request, "payment.html", {
+        'product': product
+    })
+
+def success(request):
+    return render(request, 'success.html')

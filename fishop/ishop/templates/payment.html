@@ -14,8 +14,8 @@
     <h2>К оплате: {{ product.price }} рублей</h2>
     <div class="vspace"></div>
     <h3>Реквезиты для перевода:</h3>
-    <h2>+78005553535</h2>
-    <h2>Иванов И. И.</h2>
+    <h2>+70123456789</h2>
+    <h2>Krecsa</h2>
     <div class="vspace"></div>
     <form class="paymentForm" method="post">
         {% csrf_token %}
@@ -31,6 +31,6 @@
 
 <script>
 function copyPhone() {
-    navigator.clipboard.writeText('+78005553535');
+    navigator.clipboard.writeText('+70123456789');
 }
 </script>

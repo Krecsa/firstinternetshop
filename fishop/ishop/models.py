@@ -15,7 +15,6 @@ class Product(models.Model):
 
 class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-
     author = models.CharField(max_length=256)
     rating = models.IntegerField()
     usage_duration = models.IntegerField()
