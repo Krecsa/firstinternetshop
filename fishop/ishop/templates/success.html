@@ -1,0 +1,19 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<div class="navigation">
+
+<h1><a href="/">FISHOP</a></h1>
+
+</div>
+
+<div class="paymentCard">
+    <h1>Поздравляем с покупкой!</h1>
+    <h3>Товар будет доставлен по указанному адресу</h3>
+</div>
+
+<script>
+    setTimeout(() => {
+        document.location = '/';
+    }, 3000);
+</script>

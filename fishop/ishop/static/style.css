@@ -141,16 +141,21 @@
     .searchInput {
         font-size: 30px;
         border: none;
-        background-color: #white;
-        padding: 11px;
+        background-color: white;
+        padding: 10px;
         border-radius: 30px;
         width: 100%;
         margin-right: 10px;
     }
         .review {
-        background-color: #efefef;
-        padding: 10px;
-        border-radius: 10px;
+        margin-top: 30px;
+        border-radius: 30px;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .createReview {
@@ -161,26 +166,25 @@
     .createReview * {
         margin: 0 !important;
         padding: 0 !important;
-
         font-size: 20px;
         border: none;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 30px;
     }
 
     .createReview input {
-        background-color: #e0e0e0;
+        background-color: #D9E9FF;
         padding: 5px !important;
     }
 
     .createReview select {
-        background-color: #e0e0e0;
+        background-color: #D9E9FF;
         padding: 5px !important;
     }
 
 
     .createReview textarea {
-        background-color: #e0e0e0;
+        background-color: #D9E9FF;
     }
 
     .createReview button {
