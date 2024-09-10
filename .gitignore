@@ -1,2 +1,3 @@
 venv/
 fishop/db.sqlite3
+fishop/ishop/config.py

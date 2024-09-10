@@ -1,7 +1,10 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import HttpResponse, redirect
 from django.shortcuts import render
 from .models import Product, Review
+import telebot
+from .config import  BOT_TOKEN, CHAT_ID
 
+bot = telebot.TeleBot(BOT_TOKEN)
 
 def home(request):
     search = request.GET.get('search')
@@ -49,8 +52,8 @@ def payment(request, id):
         name = request.POST.get('name')
         address = request.POST.get('address')
         # Send message to Telegram
-        bot.send_message(CHAT_ID, f'''Новый заказ: {product.name}
-    Цена: {product.price} рублей
+        bot.send_message(CHAT_ID, f'''🏷️Новый заказ: {product.name}
+💳Цена: {product.price} рублей
 
 ФИО покупателя: {name}
 Адрес доставки: {address}
