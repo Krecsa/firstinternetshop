@@ -20,6 +20,8 @@
     img {
         width: 200px;
         height: 200px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
     }
 
     button {
@@ -79,12 +81,13 @@
     }
 
     .productDetails {
+        padding: 9px;
         margin-top: 30px;
         border-radius: 30px;
         background: white;
         display: flex;
         flex-direction: row;
-        width: 70%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -103,6 +106,7 @@
 
     .productTitle {
         margin-top: 20px;
+        padding-left: 300px;
     }
 
     .productTitle * {
@@ -116,7 +120,7 @@
         padding-bottom: 5px;
         border-radius: 30px;
         background: white;
-        width: 70%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -147,7 +151,7 @@
         width: 100%;
         margin-right: 10px;
     }
-        .review {
+      .review {
         margin-top: 30px;
         border-radius: 30px;
         background: white;
@@ -164,8 +168,8 @@
     }
 
     .createReview * {
-        margin: 0 !important;
-        padding: 0 !important;
+        margin: 10 !important;
+        padding: 10 !important;
         font-size: 20px;
         border: none;
         padding: 10px;
@@ -194,7 +198,7 @@
         padding: 10px !important;
     }
 
-        .paymentCard {
+     .paymentCard {
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
