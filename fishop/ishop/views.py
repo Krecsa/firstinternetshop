@@ -4,8 +4,8 @@ from .models import Product, Review
 import telebot
 import os
 
-BOT_TOKEN = os.getnv('BOT_TOKEN')
-CHAT_ID = os.getnv('CHAT_ID')
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+CHAT_ID = os.getenv('CHAT_ID')
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
